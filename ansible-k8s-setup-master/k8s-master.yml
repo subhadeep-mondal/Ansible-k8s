@@ -18,7 +18,7 @@
 
     - name: install Pod network
       become: yes
-      shell: kubectl apply -f https://raw.githubusercontent.com/Shruti1970/ansible-kubernetes/master/ansible-k8s-setup-master/kube-flannel.yml >> pod_network_setup.txt
+      shell: kubectl apply -f https://raw.githubusercontent.com/subhadeep-mondal/ansible-k8s/master/ansible-k8s-setup-master/kube-flannel.yml >> pod_network_setup.txt
       args:
         chdir: $HOME
         creates: pod_network_setup.txt
